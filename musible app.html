@@ -1,0 +1,3089 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+    برای تو | Enaiat Yaqobi ❤️
+</title>
+
+
+<style>
+
+/* =========================================
+   GLOBAL
+========================================= */
+
+@import url(
+    'https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap'
+);
+
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    font-family:
+        "Vazirmatn",
+        sans-serif;
+
+    background:
+        #05020d;
+
+    color:
+        white;
+
+    overflow-x:
+        hidden;
+
+}
+
+
+/* =========================================
+   BACKGROUND
+========================================= */
+
+body::before {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(255,55,140,.13),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(100,50,255,.15),
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 50% 90%,
+            rgba(255,0,90,.1),
+            transparent 35%
+        );
+
+    pointer-events:
+        none;
+
+    z-index:
+        -3;
+
+}
+
+
+#stars {
+
+    position:
+        fixed;
+
+    inset:
+        0;
+
+    z-index:
+        -2;
+
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+#intro {
+
+    position:
+        fixed;
+
+    inset:
+        0;
+
+    z-index:
+        9999;
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+    padding:
+        25px;
+
+    background:
+
+        radial-gradient(
+            circle at center,
+            rgba(94,28,112,.35),
+            transparent 45%
+        ),
+
+        #05020d;
+
+    transition:
+
+        opacity 1.2s ease,
+
+        visibility 1.2s ease;
+
+}
+
+
+#intro.hide {
+
+    opacity:
+        0;
+
+    visibility:
+        hidden;
+
+    pointer-events:
+        none;
+
+}
+
+
+.intro-card {
+
+    width:
+        min(600px,100%);
+
+    text-align:
+        center;
+
+    padding:
+        55px 30px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.14);
+
+    border-radius:
+        35px;
+
+    background:
+        rgba(255,255,255,.055);
+
+    backdrop-filter:
+        blur(25px);
+
+    box-shadow:
+
+        0 30px 100px
+        rgba(0,0,0,.5),
+
+        inset 0 0 50px
+        rgba(255,70,150,.04);
+
+}
+
+
+.intro-heart {
+
+    font-size:
+        80px;
+
+    animation:
+        heartbeat 1.5s infinite;
+
+    filter:
+        drop-shadow(
+            0 0 30px #ff3d8d
+        );
+
+}
+
+
+.intro-card h1 {
+
+    margin-top:
+        20px;
+
+    font-size:
+        clamp(28px,6vw,50px);
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #fff,
+            #ff80b5,
+            #fff
+        );
+
+    -webkit-background-clip:
+        text;
+
+    color:
+        transparent;
+
+}
+
+
+.intro-card p {
+
+    margin:
+        20px auto 30px;
+
+    line-height:
+        2.1;
+
+    color:
+        #ddd;
+
+    max-width:
+        480px;
+
+}
+
+
+/* =========================================
+   START BUTTON
+========================================= */
+
+.start-btn {
+
+    border:
+        none;
+
+    color:
+        white;
+
+    font-family:
+        inherit;
+
+    font-size:
+        17px;
+
+    padding:
+        16px 38px;
+
+    border-radius:
+        100px;
+
+    cursor:
+        pointer;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #ff2f7d,
+            #9d3cff
+        );
+
+    box-shadow:
+
+        0 10px 35px
+        rgba(255,47,125,.35),
+
+        0 0 0 1px
+        rgba(255,255,255,.1)
+        inset;
+
+    transition:
+        .3s;
+
+}
+
+
+.start-btn:hover {
+
+    transform:
+        translateY(-4px)
+        scale(1.03);
+
+    box-shadow:
+
+        0 15px 50px
+        rgba(255,47,125,.5);
+
+}
+
+
+/* =========================================
+   MUSIC BUTTON
+========================================= */
+
+.music-control {
+
+    position:
+        fixed;
+
+    top:
+        20px;
+
+    left:
+        20px;
+
+    z-index:
+        1000;
+
+    width:
+        48px;
+
+    height:
+        48px;
+
+    border-radius:
+        50%;
+
+    border:
+        1px solid
+        rgba(255,255,255,.15);
+
+    background:
+        rgba(255,255,255,.08);
+
+    backdrop-filter:
+        blur(15px);
+
+    color:
+        white;
+
+    cursor:
+        pointer;
+
+    font-size:
+        19px;
+
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+
+    min-height:
+        100vh;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    text-align:
+        center;
+
+    padding:
+        100px 20px;
+
+    position:
+        relative;
+
+}
+
+
+.hero-content {
+
+    max-width:
+        850px;
+
+}
+
+
+.small-label {
+
+    color:
+        #ff76ae;
+
+    letter-spacing:
+        4px;
+
+    font-size:
+        13px;
+
+    margin-bottom:
+        25px;
+
+}
+
+
+.hero h1 {
+
+    font-size:
+        clamp(42px,10vw,95px);
+
+    line-height:
+        1.1;
+
+    font-weight:
+        800;
+
+    background:
+
+        linear-gradient(
+            120deg,
+            #fff,
+            #ff9bc4,
+            #d26cff,
+            #fff
+        );
+
+    background-size:
+        300%;
+
+    -webkit-background-clip:
+        text;
+
+    color:
+        transparent;
+
+    animation:
+        gradientMove 7s infinite linear;
+
+}
+
+
+.hero-name {
+
+    font-size:
+        clamp(16px,3vw,23px);
+
+    color:
+        #ff8db9;
+
+    margin-top:
+        22px;
+
+}
+
+
+.hero-description {
+
+    margin:
+        30px auto;
+
+    max-width:
+        650px;
+
+    line-height:
+        2.2;
+
+    color:
+        #cfc7d8;
+
+    font-size:
+        17px;
+
+}
+
+
+.scroll-down {
+
+    margin-top:
+        60px;
+
+    animation:
+        float 2s infinite;
+
+    color:
+        #aaa;
+
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+section {
+
+    padding:
+        110px 20px;
+
+    position:
+        relative;
+
+}
+
+
+.section-inner {
+
+    max-width:
+        1100px;
+
+    margin:
+        auto;
+
+}
+
+
+.section-title {
+
+    text-align:
+        center;
+
+    margin-bottom:
+        60px;
+
+}
+
+
+.section-title span {
+
+    color:
+        #ff609d;
+
+    font-size:
+        13px;
+
+    letter-spacing:
+        3px;
+
+}
+
+
+.section-title h2 {
+
+    margin-top:
+        15px;
+
+    font-size:
+        clamp(30px,5vw,48px);
+
+}
+
+
+.section-title p {
+
+    margin:
+        20px auto;
+
+    max-width:
+        650px;
+
+    color:
+        #aaa;
+
+    line-height:
+        2;
+
+}
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.timeline {
+
+    position:
+        relative;
+
+    max-width:
+        850px;
+
+    margin:
+        auto;
+
+}
+
+
+.timeline::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    right:
+        50%;
+
+    top:
+        0;
+
+    bottom:
+        0;
+
+    width:
+        2px;
+
+    background:
+
+        linear-gradient(
+            transparent,
+            #ff3d88,
+            #9b4dff,
+            transparent
+        );
+
+}
+
+
+.memory {
+
+    width:
+        46%;
+
+    padding:
+        28px;
+
+    border-radius:
+        25px;
+
+    background:
+        rgba(255,255,255,.045);
+
+    border:
+        1px solid
+        rgba(255,255,255,.09);
+
+    backdrop-filter:
+        blur(15px);
+
+    margin-bottom:
+        50px;
+
+    transition:
+        .4s;
+
+    opacity:
+        0;
+
+    transform:
+        translateY(40px);
+
+}
+
+
+.memory.visible {
+
+    opacity:
+        1;
+
+    transform:
+        translateY(0);
+
+}
+
+
+.memory:nth-child(odd) {
+
+    margin-left:
+        auto;
+
+}
+
+
+.memory:nth-child(even) {
+
+    margin-right:
+        auto;
+
+}
+
+
+.memory:hover {
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+        rgba(255,80,150,.35);
+
+    box-shadow:
+
+        0 20px 50px
+        rgba(0,0,0,.3);
+
+}
+
+
+.memory-icon {
+
+    font-size:
+        30px;
+
+    margin-bottom:
+        15px;
+
+}
+
+
+.memory h3 {
+
+    color:
+        #ff86b4;
+
+    margin-bottom:
+        12px;
+
+}
+
+
+.memory p {
+
+    color:
+        #c7c0ce;
+
+    line-height:
+        2.1;
+
+}
+
+
+/* =========================================
+   QUESTIONS
+========================================= */
+
+.questions-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        20px;
+
+}
+
+
+.question {
+
+    min-height:
+        220px;
+
+    padding:
+        30px;
+
+    border-radius:
+        28px;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.07),
+            rgba(255,255,255,.025)
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    cursor:
+        pointer;
+
+    transition:
+        .4s;
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+}
+
+
+.question::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        120px;
+
+    height:
+        120px;
+
+    background:
+        #ff397f;
+
+    filter:
+        blur(70px);
+
+    opacity:
+        .12;
+
+    top:
+        -50px;
+
+    left:
+        -50px;
+
+}
+
+
+.question:hover {
+
+    transform:
+        translateY(-8px)
+        rotate(.5deg);
+
+    border-color:
+        rgba(255,80,150,.4);
+
+}
+
+
+.question-number {
+
+    color:
+        #ff609d;
+
+    font-size:
+        13px;
+
+}
+
+
+.question h3 {
+
+    margin:
+        15px 0;
+
+    font-size:
+        18px;
+
+}
+
+
+.answer {
+
+    color:
+        #aaa;
+
+    line-height:
+        1.9;
+
+    max-height:
+        0;
+
+    opacity:
+        0;
+
+    overflow:
+        hidden;
+
+    transition:
+        .6s;
+
+}
+
+
+.question.open .answer {
+
+    max-height:
+        300px;
+
+    opacity:
+        1;
+
+}
+
+
+/* =========================================
+   LETTER
+========================================= */
+
+.letter-container {
+
+    max-width:
+        800px;
+
+    margin:
+        auto;
+
+}
+
+
+.letter {
+
+    padding:
+        55px;
+
+    border-radius:
+        30px;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.075),
+            rgba(255,255,255,.025)
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,.1);
+
+    box-shadow:
+
+        0 30px 100px
+        rgba(0,0,0,.3);
+
+    position:
+        relative;
+
+}
+
+
+.letter::before {
+
+    content:
+        "“";
+
+    position:
+        absolute;
+
+    font-family:
+        serif;
+
+    font-size:
+        160px;
+
+    color:
+        rgba(255,80,150,.08);
+
+    top:
+        -45px;
+
+    right:
+        20px;
+
+}
+
+
+.letter p {
+
+    line-height:
+        2.5;
+
+    color:
+        #ddd;
+
+    margin-bottom:
+        20px;
+
+    font-size:
+        17px;
+
+}
+
+
+.signature {
+
+    text-align:
+        left;
+
+    margin-top:
+        35px;
+
+    color:
+        #ff7cad;
+
+    font-size:
+        20px;
+
+}
+
+
+/* =========================================
+   FINAL SECTION
+========================================= */
+
+.final {
+
+    min-height:
+        80vh;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    text-align:
+        center;
+
+}
+
+
+.final-heart {
+
+    font-size:
+        100px;
+
+    animation:
+        heartbeat 1.5s infinite;
+
+    filter:
+        drop-shadow(
+            0 0 40px #ff246f
+        );
+
+}
+
+
+.final h2 {
+
+    font-size:
+        clamp(32px,7vw,70px);
+
+    margin:
+        25px 0;
+
+}
+
+
+.final p {
+
+    max-width:
+        650px;
+
+    margin:
+        auto;
+
+    line-height:
+        2.3;
+
+    color:
+        #aaa;
+
+}
+
+
+.final-name {
+
+    color:
+        #ff72a9;
+
+    margin-top:
+        30px;
+
+    font-size:
+        22px;
+
+}
+
+
+/* =========================================
+   FLOATING HEARTS
+========================================= */
+
+.heart {
+
+    position:
+        fixed;
+
+    bottom:
+        -30px;
+
+    color:
+        #ff4f92;
+
+    pointer-events:
+        none;
+
+    z-index:
+        9997;
+
+    animation:
+        rise linear forwards;
+
+}
+
+
+/* =========================================
+   SPECIAL ENDING
+========================================= */
+
+#specialEnding {
+
+    position:
+        fixed;
+
+    inset:
+        0;
+
+    z-index:
+        9998;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    text-align:
+        center;
+
+    padding:
+        25px;
+
+    background:
+
+        radial-gradient(
+            circle at center,
+            rgba(255,35,120,.25),
+            transparent 35%
+        ),
+
+        #05020d;
+
+    opacity:
+        0;
+
+    visibility:
+        hidden;
+
+    pointer-events:
+        none;
+
+    transition:
+
+        opacity 2s ease,
+
+        visibility 2s ease;
+
+}
+
+
+#specialEnding.show {
+
+    opacity:
+        1;
+
+    visibility:
+        visible;
+
+    pointer-events:
+        auto;
+
+}
+
+
+.special-content {
+
+    max-width:
+        750px;
+
+    animation:
+        specialAppear 2s ease forwards;
+
+}
+
+
+.special-heart {
+
+    font-size:
+        110px;
+
+    filter:
+
+        drop-shadow(
+            0 0 20px #ff246f
+        )
+
+        drop-shadow(
+            0 0 60px #ff246f
+        );
+
+    animation:
+        heartbeat 1.5s infinite;
+
+}
+
+
+.special-content h2 {
+
+    margin:
+        30px 0 20px;
+
+    font-size:
+        clamp(35px,8vw,75px);
+
+    background:
+
+        linear-gradient(
+            120deg,
+            #fff,
+            #ff78ac,
+            #d06cff,
+            #fff
+        );
+
+    background-size:
+        300%;
+
+    -webkit-background-clip:
+        text;
+
+    color:
+        transparent;
+
+    animation:
+        gradientMove 6s infinite linear;
+
+}
+
+
+.special-message {
+
+    min-height:
+        120px;
+
+    color:
+        #ddd;
+
+    line-height:
+        2.4;
+
+    font-size:
+        18px;
+
+}
+
+
+.special-signature {
+
+    margin-top:
+        35px;
+
+    color:
+        #ff75aa;
+
+    font-size:
+        21px;
+
+    opacity:
+        0;
+
+    animation:
+        signatureAppear 2s ease 5s forwards;
+
+}
+
+
+.special-small {
+
+    margin-top:
+        30px;
+
+    color:
+        #777;
+
+    font-size:
+        13px;
+
+}
+
+
+/* =========================================
+   RESTART BUTTON
+========================================= */
+
+.restart-btn {
+
+    margin-top:
+        35px;
+
+    padding:
+        14px 32px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.15);
+
+    border-radius:
+        100px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(255,47,125,.25),
+            rgba(157,60,255,.25)
+        );
+
+    color:
+        white;
+
+    font-family:
+        inherit;
+
+    font-size:
+        16px;
+
+    cursor:
+        pointer;
+
+    backdrop-filter:
+        blur(15px);
+
+    box-shadow:
+
+        0 10px 35px
+        rgba(255,47,125,.15);
+
+    transition:
+        .4s;
+
+    opacity:
+        0;
+
+    animation:
+        signatureAppear
+        2s ease
+        6s forwards;
+
+}
+
+
+.restart-btn:hover {
+
+    transform:
+        translateY(-4px)
+        scale(1.04);
+
+    border-color:
+        rgba(255,100,170,.5);
+
+    box-shadow:
+
+        0 15px 45px
+        rgba(255,47,125,.3);
+
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes heartbeat {
+
+    0%,100% {
+
+        transform:
+            scale(1);
+
+    }
+
+    15% {
+
+        transform:
+            scale(1.18);
+
+    }
+
+    30% {
+
+        transform:
+            scale(1);
+
+    }
+
+    45% {
+
+        transform:
+            scale(1.12);
+
+    }
+
+}
+
+
+@keyframes gradientMove {
+
+    0% {
+
+        background-position:
+            0%;
+
+    }
+
+    50% {
+
+        background-position:
+            100%;
+
+    }
+
+    100% {
+
+        background-position:
+            0%;
+
+    }
+
+}
+
+
+@keyframes float {
+
+    0%,100% {
+
+        transform:
+            translateY(0);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(12px);
+
+    }
+
+}
+
+
+@keyframes rise {
+
+    from {
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+        opacity:
+            0;
+
+    }
+
+    15% {
+
+        opacity:
+            .7;
+
+    }
+
+    to {
+
+        transform:
+            translateY(-110vh)
+            rotate(360deg);
+
+        opacity:
+            0;
+
+    }
+
+}
+
+
+@keyframes specialAppear {
+
+    from {
+
+        transform:
+            scale(.75)
+            translateY(40px);
+
+        opacity:
+            0;
+
+    }
+
+    to {
+
+        transform:
+            scale(1)
+            translateY(0);
+
+        opacity:
+            1;
+
+    }
+
+}
+
+
+@keyframes signatureAppear {
+
+    from {
+
+        opacity:
+            0;
+
+        transform:
+            translateY(15px);
+
+    }
+
+    to {
+
+        opacity:
+            1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width:800px) {
+
+    .questions-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .timeline::before {
+
+        right:
+            12px;
+
+    }
+
+
+    .memory,
+    .memory:nth-child(odd),
+    .memory:nth-child(even) {
+
+        width:
+            calc(100% - 40px);
+
+        margin-right:
+            40px;
+
+        margin-left:
+            0;
+
+    }
+
+
+    .letter {
+
+        padding:
+            30px 23px;
+
+    }
+
+
+    section {
+
+        padding:
+            80px 17px;
+
+    }
+
+}
+
+
+@media (max-width:500px) {
+
+    .special-heart {
+
+        font-size:
+            80px;
+
+    }
+
+
+    .special-message {
+
+        font-size:
+            16px;
+
+        line-height:
+            2.2;
+
+    }
+
+
+    .special-signature {
+
+        font-size:
+            18px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================
+     STARS
+===================================== -->
+
+<canvas id="stars"></canvas>
+
+
+<!-- =====================================
+     INTRO
+===================================== -->
+
+<div id="intro">
+
+    <div class="intro-card">
+
+        <div class="intro-heart">
+            ❤️
+        </div>
+
+        <h1>
+            یک لحظه برای تو...
+        </h1>
+
+        <p>
+
+            این صفحه فقط یک صفحه‌ی معمولی نیست...
+            یک سفر کوچک است به میان خاطرات،
+            نگاه‌ها، احساس‌ها و لحظه‌هایی که
+            شاید هیچ‌وقت فراموش نشوند.
+
+        </p>
+
+        <button
+            class="start-btn"
+            id="startBtn">
+
+            🎵 شروع موسیقی و ورود
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================
+     SONG
+===================================== -->
+
+<audio
+    id="song"
+    preload="auto">
+
+    <source
+        src="song.mp3"
+        type="audio/mpeg">
+
+</audio>
+
+
+<!-- =====================================
+     MUSIC CONTROL
+===================================== -->
+
+<button
+    class="music-control"
+    id="musicBtn"
+    title="موسیقی">
+
+    🎵
+
+</button>
+
+
+<!-- =====================================
+     HERO
+===================================== -->
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <div class="small-label">
+
+            یک داستان کوچک از یک احساس بزرگ
+
+        </div>
+
+        <h1>
+
+            برای تو
+
+        </h1>
+
+        <div class="hero-name">
+
+            از طرف Enaiat Yaqobi ❤️
+
+        </div>
+
+        <p class="hero-description">
+
+            بعضی آدم‌ها وارد زندگی ما می‌شوند،
+            اما بعضی‌ها تبدیل به بخشی از خاطرات ما می‌شوند.
+            اینجا برای همان لحظه‌هاست...
+
+        </p>
+
+        <div class="scroll-down">
+
+            ↓ آرام آرام پایین برو ↓
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================
+     MEMORIES
+===================================== -->
+
+<section>
+
+    <div class="section-inner">
+
+        <div class="section-title">
+
+            <span>
+                خاطرات ما
+            </span>
+
+            <h2>
+                اگر به آن روزها برگردیم...
+            </h2>
+
+            <p>
+
+                شاید بعضی لحظه‌ها خیلی ساده بودند،
+                اما وقتی امروز به آن‌ها فکر می‌کنیم،
+                می‌بینیم که چقدر ارزشمند بوده‌اند.
+
+            </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <div class="memory">
+
+                <div class="memory-icon">
+                    🌙
+                </div>
+
+                <h3>
+                    اولین دیدار
+                </h3>
+
+                <p>
+
+                    یادت هست اولین بار که همدیگر را دیدیم
+                    چه حسی داشت؟
+                    شاید آن لحظه نمی‌دانستیم که قرار است
+                    بعدها همین نگاه ساده تبدیل به یک خاطره‌ی
+                    قشنگ شود.
+
+                </p>
+
+            </div>
+
+
+            <div class="memory">
+
+                <div class="memory-icon">
+                    👀
+                </div>
+
+                <h3>
+                    آن همه دیدن‌ها
+                </h3>
+
+                <p>
+
+                    زمانی بود که زیاد همدیگر را می‌دیدیم...
+                    نگاه‌هایی که شاید کوتاه بودند،
+                    اما گاهی یک نگاه بیشتر از هزار کلمه حرف داشت.
+
+                </p>
+
+            </div>
+
+
+            <div class="memory">
+
+                <div class="memory-icon">
+                    ✨
+                </div>
+
+                <h3>
+                    لحظه‌های ساده
+                </h3>
+
+                <p>
+
+                    شاید آن روزها فکر می‌کردیم همه چیز عادی است؛
+                    یک دیدار، یک حرف، یک لبخند...
+                    اما حالا می‌فهمیم بعضی از همین چیزهای ساده
+                    تبدیل به زیباترین خاطرات می‌شوند.
+
+                </p>
+
+            </div>
+
+
+            <div class="memory">
+
+                <div class="memory-icon">
+                    💭
+                </div>
+
+                <h3>
+                    حالا که فکر می‌کنم...
+                </h3>
+
+                <p>
+
+                    بعضی خاطرات هنوز هم وقتی به ذهنم می‌آیند،
+                    یک لبخند کوچک روی صورتم می‌نشینند.
+                    شاید زمان گذشته باشد،
+                    اما بعضی احساس‌ها تاریخ انقضا ندارند.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     QUESTIONS
+===================================== -->
+
+<section>
+
+    <div class="section-inner">
+
+        <div class="section-title">
+
+            <span>
+                یک بازی کوچک
+            </span>
+
+            <h2>
+                چند سوال برای تو ❤️
+            </h2>
+
+            <p>
+
+                روی هر کدام کلیک کن...
+                شاید جواب بعضی سوال‌ها را فقط قلب بداند.
+
+            </p>
+
+        </div>
+
+
+        <div class="questions-grid">
+
+
+            <div class="question">
+
+                <div class="question-number">
+                    سوال 01
+                </div>
+
+                <h3>
+
+                    اگر دوباره همان روز را ببینیم، چه می‌گویی؟
+
+                </h3>
+
+                <div class="answer">
+
+                    شاید فقط بگویم:
+                    «کاش آن لحظه را بیشتر قدر می‌دانستم.»
+
+                </div>
+
+            </div>
+
+
+            <div class="question">
+
+                <div class="question-number">
+                    سوال 02
+                </div>
+
+                <h3>
+
+                    کدام خاطره هنوز در ذهنت مانده؟
+
+                </h3>
+
+                <div class="answer">
+
+                    آن لحظه‌ای که هیچ اتفاق خاصی نیفتاد،
+                    اما somehow همان لحظه برایمان خاص شد.
+                    بعضی خاطرات دلیل بزرگی نمی‌خواهند.
+
+                </div>
+
+            </div>
+
+
+            <div class="question">
+
+                <div class="question-number">
+                    سوال 03
+                </div>
+
+                <h3>
+
+                    اگر می‌توانستی یک لحظه را تکرار کنی؟
+
+                </h3>
+
+                <div class="answer">
+
+                    همان لحظه‌ای را انتخاب می‌کردم که
+                    کنار هم بودیم و هیچ عجله‌ای برای رفتن
+                    وجود نداشت.
+
+                </div>
+
+            </div>
+
+
+            <div class="question">
+
+                <div class="question-number">
+                    سوال 04
+                </div>
+
+                <h3>
+
+                    آیا هنوز بعضی نگاه‌ها را به یاد داری؟
+
+                </h3>
+
+                <div class="answer">
+
+                    بعضی نگاه‌ها فراموش نمی‌شوند.
+                    نه به خاطر اینکه طولانی بودند،
+                    بلکه به خاطر احساسی که داشتند.
+
+                </div>
+
+            </div>
+
+
+            <div class="question">
+
+                <div class="question-number">
+                    سوال 05
+                </div>
+
+                <h3>
+
+                    اگر یک روز دوباره همدیگر را ببینیم؟
+
+                </h3>
+
+                <div class="answer">
+
+                    شاید اول فقط لبخند بزنیم...
+                    بعد سکوت کنیم...
+                    چون بعضی حرف‌ها بعد از مدت‌ها
+                    بیشتر از کلمات، با نگاه گفته می‌شوند.
+
+                </div>
+
+            </div>
+
+
+            <div class="question">
+
+                <div class="question-number">
+                    سوال 06
+                </div>
+
+                <h3>
+
+                    فکر می‌کنی چرا بعضی آدم‌ها ماندگار می‌شوند؟
+
+                </h3>
+
+                <div class="answer">
+
+                    چون حضورشان فقط در یک زمان خاص نیست؛
+                    بعد از رفتن‌شان هم در ذهن،
+                    در خاطره و در قلب ما ادامه دارند.
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     LETTER
+===================================== -->
+
+<section>
+
+    <div class="section-inner">
+
+        <div class="section-title">
+
+            <span>
+                یک حرف از دل
+            </span>
+
+            <h2>
+                اگر بخواهم صادق باشم...
+            </h2>
+
+        </div>
+
+
+        <div class="letter-container">
+
+            <div class="letter">
+
+                <p>
+
+                    نمی‌دانم از کجا شروع کنم...
+                    شاید از همان روزهایی که زیاد همدیگر را می‌دیدیم.
+
+                </p>
+
+
+                <p>
+
+                    آن زمان شاید نمی‌دانستیم که یک روز،
+                    همین دیدن‌های معمولی تبدیل به خاطراتی شوند
+                    که با یادآوری‌شان قلبمان کمی آرام‌تر و
+                    لبخندمان کمی واقعی‌تر شود.
+
+                </p>
+
+
+                <p>
+
+                    بعضی آدم‌ها را نمی‌شود فقط با کلمه‌ی
+                    «گذشته» تعریف کرد.
+                    چون بعضی آدم‌ها حتی وقتی از کنارمان دور می‌شوند،
+                    یک قسمت کوچک از حضورشان در ما باقی می‌ماند.
+
+                </p>
+
+
+                <p>
+
+                    اگر روزی دوباره همدیگر را ببینیم،
+                    شاید هیچ چیز مثل گذشته نباشد...
+                    اما امیدوارم همان لحظه،
+                    حتی برای چند ثانیه،
+                    هر دو یادمان بیاید که زمانی
+                    چقدر خاطره ساختیم.
+
+                </p>
+
+
+                <p>
+
+                    و اگر از من بپرسی چه چیزی از آن روزها
+                    بیشتر در خاطرم مانده...
+                    جوابم شاید خیلی ساده باشد:
+
+                    <strong>
+                        احساسی که هنگام دیدنت داشتم.
+                    </strong>
+
+                </p>
+
+
+                <div class="signature">
+
+                    با تمام خاطرات خوب...<br>
+
+                    Enaiat Yaqobi ❤️
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     FINAL
+===================================== -->
+
+<section class="final">
+
+    <div>
+
+        <div class="final-heart">
+            ❤️
+        </div>
+
+        <h2>
+
+            بعضی خاطرات<br>
+            هیچ‌وقت پیر نمی‌شوند.
+
+        </h2>
+
+        <p>
+
+            شاید زمان بگذرد،
+            شاید فاصله‌ها زیاد شوند،
+            شاید خیلی چیزها تغییر کنند...
+            اما خاطره‌ی بعضی لحظه‌ها همیشه
+            یک جای آرام در قلب ما باقی می‌ماند.
+
+        </p>
+
+        <div class="final-name">
+
+            — Enaiat Yaqobi —
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     SPECIAL ENDING
+===================================== -->
+
+<div id="specialEnding">
+
+    <div class="special-content">
+
+
+        <div class="special-heart">
+            ❤️
+        </div>
+
+
+        <h2>
+            برای تو...
+        </h2>
+
+
+        <div
+            class="special-message"
+            id="specialMessage">
+        </div>
+
+
+        <div class="special-signature">
+
+            با تمام وجود...<br>
+
+            Enaiat Yaqobi ❤️
+
+        </div>
+
+
+        <div class="special-small">
+
+            بعضی احساس‌ها هیچ‌وقت تمام نمی‌شوند.
+
+        </div>
+
+
+        <button
+            class="restart-btn"
+            id="restartBtn">
+
+            ↩️ شروع دوباره
+
+        </button>
+
+
+    </div>
+
+</div>
+
+
+<script>
+
+
+/* =========================================
+   STAR FIELD
+========================================= */
+
+const canvas =
+    document.getElementById("stars");
+
+
+const ctx =
+    canvas.getContext("2d");
+
+
+let stars = [];
+
+
+function resizeCanvas() {
+
+    canvas.width =
+        window.innerWidth;
+
+    canvas.height =
+        window.innerHeight;
+
+}
+
+
+function createStars() {
+
+    stars = [];
+
+
+    const amount =
+        Math.min(
+            180,
+            Math.floor(
+                window.innerWidth / 6
+            )
+        );
+
+
+    for (
+        let i = 0;
+        i < amount;
+        i++
+    ) {
+
+        stars.push({
+
+            x:
+                Math.random()
+                * canvas.width,
+
+            y:
+                Math.random()
+                * canvas.height,
+
+            radius:
+                Math.random()
+                * 1.6,
+
+            speed:
+                Math.random()
+                * .25 + .05,
+
+            opacity:
+                Math.random()
+
+        });
+
+    }
+
+}
+
+
+resizeCanvas();
+
+createStars();
+
+
+window.addEventListener(
+    "resize",
+    () => {
+
+        resizeCanvas();
+
+        createStars();
+
+    }
+);
+
+
+function drawStars() {
+
+    ctx.clearRect(
+        0,
+        0,
+        canvas.width,
+        canvas.height
+    );
+
+
+    stars.forEach(star => {
+
+        star.y -=
+            star.speed;
+
+
+        if (
+            star.y < 0
+        ) {
+
+            star.y =
+                canvas.height;
+
+        }
+
+
+        ctx.beginPath();
+
+
+        ctx.arc(
+
+            star.x,
+
+            star.y,
+
+            star.radius,
+
+            0,
+
+            Math.PI * 2
+
+        );
+
+
+        ctx.fillStyle =
+
+            `rgba(
+                255,
+                255,
+                255,
+                ${star.opacity}
+            )`;
+
+
+        ctx.fill();
+
+    });
+
+
+    requestAnimationFrame(
+        drawStars
+    );
+
+}
+
+
+drawStars();
+
+
+/* =========================================
+   QUESTIONS
+========================================= */
+
+document
+    .querySelectorAll(".question")
+    .forEach(card => {
+
+        card.addEventListener(
+            "click",
+            () => {
+
+                card.classList.toggle(
+                    "open"
+                );
+
+            }
+        );
+
+    });
+
+
+/* =========================================
+   MEMORY REVEAL
+========================================= */
+
+const memories =
+    document.querySelectorAll(
+        ".memory"
+    );
+
+
+function revealMemories() {
+
+    memories.forEach(
+        memory => {
+
+            const rect =
+                memory.getBoundingClientRect();
+
+
+            if (
+                rect.top <
+                window.innerHeight - 80
+            ) {
+
+                memory.classList.add(
+                    "visible"
+                );
+
+            }
+
+        }
+    );
+
+}
+
+
+window.addEventListener(
+    "scroll",
+    revealMemories
+);
+
+
+revealMemories();
+
+
+/* =========================================
+   FLOATING HEARTS
+========================================= */
+
+function createHeart() {
+
+    const heart =
+        document.createElement(
+            "div"
+        );
+
+
+    heart.className =
+        "heart";
+
+
+    const hearts = [
+
+        "❤️",
+        "💕",
+        "💗",
+        "💖",
+        "✨"
+
+    ];
+
+
+    heart.innerHTML =
+        hearts[
+            Math.floor(
+                Math.random()
+                * hearts.length
+            )
+        ];
+
+
+    heart.style.left =
+        Math.random()
+        * 100 +
+        "vw";
+
+
+    heart.style.fontSize =
+        (
+            10 +
+            Math.random() * 20
+        ) +
+        "px";
+
+
+    heart.style.animationDuration =
+        (
+            6 +
+            Math.random() * 7
+        ) +
+        "s";
+
+
+    document.body.appendChild(
+        heart
+    );
+
+
+    setTimeout(
+        () => {
+
+            heart.remove();
+
+        },
+        14000
+    );
+
+}
+
+
+setInterval(
+    createHeart,
+    900
+);
+
+
+/* =========================================
+   MUSIC
+========================================= */
+
+const song =
+    document.getElementById(
+        "song"
+    );
+
+
+const musicBtn =
+    document.getElementById(
+        "musicBtn"
+    );
+
+
+song.volume =
+    0.45;
+
+
+function startMusic() {
+
+    song.play()
+        .then(() => {
+
+            musicBtn.innerHTML =
+                "🔊";
+
+        })
+        .catch(error => {
+
+            console.log(
+                "Music error:",
+                error
+            );
+
+        });
+
+}
+
+
+/* =========================================
+   MUSIC BUTTON
+========================================= */
+
+musicBtn.addEventListener(
+    "click",
+    () => {
+
+        if (
+            song.paused
+        ) {
+
+            song.play();
+
+            musicBtn.innerHTML =
+                "🔊";
+
+        }
+
+        else {
+
+            song.pause();
+
+            musicBtn.innerHTML =
+                "🔇";
+
+        }
+
+    }
+);
+
+
+/* =========================================
+   INTRO START
+========================================= */
+
+const intro =
+    document.getElementById(
+        "intro"
+    );
+
+
+const startBtn =
+    document.getElementById(
+        "startBtn"
+    );
+
+
+startBtn.addEventListener(
+    "click",
+    () => {
+
+        startMusic();
+
+        intro.classList.add(
+            "hide"
+        );
+
+        window.scrollTo({
+            top: 0,
+            behavior: "instant"
+        });
+
+    }
+);
+
+
+/* =========================================
+   HERO PARALLAX
+========================================= */
+
+window.addEventListener(
+    "scroll",
+    () => {
+
+        const hero =
+            document.querySelector(
+                ".hero-content"
+            );
+
+
+        const scroll =
+            window.scrollY;
+
+
+        /*
+         * Don't move hero after
+         * special ending appears
+         */
+
+        if (!endingShown) {
+
+            hero.style.transform =
+                `translateY(
+                    ${scroll * .18}px
+                )`;
+
+
+            hero.style.opacity =
+                Math.max(
+                    0,
+                    1 - scroll / 600
+                );
+
+        }
+
+    }
+);
+
+
+/* =========================================
+   SPECIAL ENDING
+========================================= */
+
+const specialEnding =
+    document.getElementById(
+        "specialEnding"
+    );
+
+
+const specialMessage =
+    document.getElementById(
+        "specialMessage"
+    );
+
+
+const restartBtn =
+    document.getElementById(
+        "restartBtn"
+    );
+
+
+let endingShown =
+    false;
+
+
+const finalText =
+
+    "اگر تا اینجا آمدی، فقط می‌خواستم بدانی که ساختن این صفحه برای من فقط ساختن یک صفحه نبود... هر کلمه، هر خاطره و هر لحظه‌ای که اینجا گذاشتم، یک دلیل داشت. شاید نتوانم همیشه همه چیز را با کلمات بگویم، اما بعضی آدم‌ها آنقدر خاص هستند که حتی خاطره‌شان هم ارزش نگه داشتن دارد. ❤️";
+
+
+function typeSpecialMessage() {
+
+    let index =
+        0;
+
+
+    specialMessage.innerHTML =
+        "";
+
+
+    const interval =
+        setInterval(
+            () => {
+
+                specialMessage.innerHTML =
+                    finalText.substring(
+                        0,
+                        index
+                    );
+
+
+                index++;
+
+
+                if (
+                    index >
+                    finalText.length
+                ) {
+
+                    clearInterval(
+                        interval
+                    );
+
+                }
+
+            },
+            45
+        );
+
+}
+
+
+/* =========================================
+   SHOW SPECIAL ENDING
+========================================= */
+
+function showSpecialEnding() {
+
+    if (
+        endingShown
+    ) {
+
+        return;
+
+    }
+
+
+    endingShown =
+        true;
+
+
+    specialEnding.classList.add(
+        "show"
+    );
+
+
+    typeSpecialMessage();
+
+
+    /*
+     * Fade music
+     */
+
+    let volume =
+        song.volume;
+
+
+    const fadeMusic =
+        setInterval(
+            () => {
+
+                volume -=
+                    0.015;
+
+
+                if (
+                    volume <= 0
+                ) {
+
+                    song.volume =
+                        0;
+
+
+                    clearInterval(
+                        fadeMusic
+                    );
+
+                }
+
+                else {
+
+                    song.volume =
+                        volume;
+
+                }
+
+            },
+            100
+        );
+
+
+    /*
+     * Heart explosion
+     */
+
+    for (
+        let i = 0;
+        i < 45;
+        i++
+    ) {
+
+        setTimeout(
+            () => {
+
+                createHeart();
+
+            },
+            i * 100
+        );
+
+    }
+
+}
+
+
+/* =========================================
+   DETECT PAGE END
+========================================= */
+
+window.addEventListener(
+    "scroll",
+    () => {
+
+        const scrollPosition =
+
+            window.innerHeight +
+            window.scrollY;
+
+
+        const pageHeight =
+
+            document.documentElement
+                .scrollHeight;
+
+
+        if (
+            scrollPosition >=
+            pageHeight - 80
+        ) {
+
+            showSpecialEnding();
+
+        }
+
+    }
+);
+
+
+/* =========================================
+   RESTART
+========================================= */
+
+restartBtn.addEventListener(
+    "click",
+    () => {
+
+        /*
+         * Hide special ending
+         */
+
+        specialEnding.classList.remove(
+            "show"
+        );
+
+
+        /*
+         * Reset ending
+         */
+
+        endingShown =
+            false;
+
+
+        /*
+         * Reset final message
+         */
+
+        specialMessage.innerHTML =
+            "";
+
+
+        /*
+         * Reset music
+         */
+
+        song.pause();
+
+        song.currentTime =
+            0;
+
+        song.volume =
+            0.45;
+
+
+        /*
+         * Scroll to top
+         */
+
+        window.scrollTo({
+
+            top:
+                0,
+
+            behavior:
+                "smooth"
+
+        });
+
+
+        /*
+         * Reset hero
+         */
+
+        const hero =
+            document.querySelector(
+                ".hero-content"
+            );
+
+
+        hero.style.transform =
+            "translateY(0)";
+
+
+        hero.style.opacity =
+            "1";
+
+
+        /*
+         * Close questions
+         */
+
+        document
+            .querySelectorAll(
+                ".question.open"
+            )
+            .forEach(
+                question => {
+
+                    question.classList.remove(
+                        "open"
+                    );
+
+                }
+            );
+
+
+        /*
+         * Hide memories again
+         */
+
+        document
+            .querySelectorAll(
+                ".memory"
+            )
+            .forEach(
+                memory => {
+
+                    memory.classList.remove(
+                        "visible"
+                    );
+
+                }
+            );
+
+
+        /*
+         * Start song again
+         */
+
+        setTimeout(
+            () => {
+
+                song.play()
+                    .then(() => {
+
+                        musicBtn.innerHTML =
+                            "🔊";
+
+                    })
+                    .catch(() => {
+
+                        musicBtn.innerHTML =
+                            "🎵";
+
+                    });
+
+            },
+            800
+        );
+
+    }
+);
+
+
+</script>
+
+</body>
+
+</html>
